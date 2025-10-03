@@ -1,0 +1,13 @@
+<app-header />
+<div>
+<h3>{{product?.title}}</h3>
+<p>{{product?.description}}</p>
+</div>
+<div>
+@if (!product) {
+    <h3>NO SE ENCUENTRA EL PRODUCTO EN NUESTRA BASE DE DATOS.</h3>
+    } @else {
+        <p>La mejor calidad del mercado</p>
+    }
+    </div>
+<app-footer />

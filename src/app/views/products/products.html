@@ -1,0 +1,19 @@
+<app-header></app-header>
+<h2>Nuestros Productos</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fuga voluptate repudiandae voluptatum a eos aut,
+    eaque deserunt quibusdam soluta quas, accusamus voluptatibus magni pariatur dolorum facilis maiores molestiae
+    dolore.</p>
+
+<section>
+    @if (cargando) {
+    <p>Cargando...</p>
+    }
+    @for (Product of Products; track Product.id) {
+    <app-product-card [id] = "Product.id" [title]="Product.title" [price]="Product.price" [description]="Product.description"
+        [image]="Product.image" [category]="Product.category" />
+    } @empty {
+    <p>No hay productos</p>
+    }
+
+</section>
+<app-footer></app-footer>
