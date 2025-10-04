@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { Footer } from '../../components/footer/footer';
 import { Header } from '../../components/header/header';
 import { ProductModel, ProductService } from '../products/products.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 
 @Component({
   selector: 'app-product-detail',
-  imports: [Header, Footer],
+  imports: [Header, Footer,RouterLink],
   templateUrl: './product-detail.html',
   styleUrl: './product-detail.css'
 })

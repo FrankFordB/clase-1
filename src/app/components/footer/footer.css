@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000f3;
+    color: whitesmoke;
+}
+
+p{
+    font-style: italic;
+    font-size: 18px;
+}

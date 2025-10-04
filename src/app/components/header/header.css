@@ -1,0 +1,39 @@
+header{
+    background-color: #F2F2F2;
+   
+}
+.headerMaster {
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.imagenLogo img {
+  display: block;
+  width: 30%;
+  object-fit: contain;
+  object-position: 0px -4px;
+  margin-left: 20px ; 
+  border-radius: 50px;
+}
+.Navegador{
+    width: 70%;
+}
+.Navegador nav ul {
+    display: flex;
+    gap: 20%;
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+a:hover{
+    scale: 1.01;
+    color: #817d71 ;
+}

@@ -1,6 +1,67 @@
-div {
-    border: 1px solid black;
-    margin: 5px;
-    padding: 10px;
-    transition: all 0.5s;
+section {
+
+    height: 80vh;
+    background-color: #f5f4f4b0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-section {
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+    color: #000000;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    gap: 1.5rem;
+}
+
+.product-info {
+    background-color: #EAE4D5;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    border-left: 6px solid #B6B09F;
+}
+
+.product-info h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.product-info p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.product-extra {
+    background-color: #B6B09F;
+    padding: 1rem;
+    width: 40%;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+.product-extra .not-found {
+    color: #fff;
+    background: #000000;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.product-extra .quality {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.3rem;
+
 }

@@ -1,5 +1,6 @@
 <app-header></app-header>
-<h2> Pagina de contacto</h2>
+<section>
+<h2> TRABAJA CON NOSOTROS</h2>
 <form [formGroup]="contacForm" (submit)="onSubmit()">
     <label for="">Nombre:</label>
     <input type="text" formControlName="nombre">
@@ -20,4 +21,5 @@
     
     <button>Enviar</button>
 </form>
+</section>
 <app-footer></app-footer>

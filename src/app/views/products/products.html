@@ -1,16 +1,47 @@
 <app-header></app-header>
-<h2>Nuestros Productos</h2>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fuga voluptate repudiandae voluptatum a eos aut,
-    eaque deserunt quibusdam soluta quas, accusamus voluptatibus magni pariatur dolorum facilis maiores molestiae
-    dolore.</p>
-
 <section>
+    <h2>NUESTROS PRODUCTOS</h2>
+    <div>
+        <p>Descubre un mundo de posibilidades en nuestra tienda, donde cada producto ha sido seleccionado pensando en tu
+            comodidad, estilo y necesidades. Desde la tecnología más innovadora, artículos esenciales para el hogar,
+            moda y
+            accesorios, hasta productos de belleza, bienestar y cuidado personal: tenemos todo lo que imaginas y mucho
+            más.
+
+            Cada artículo de nuestro catálogo refleja calidad, durabilidad y diseño, garantizando que cada compra sea
+            una
+            experiencia satisfactoria. Nos apasiona ofrecer productos que no solo cumplen su función, sino que también
+            inspiran,
+            sorprenden y hacen tu vida más práctica y emocionante.
+
+            Explorar nuestra tienda es sencillo: nuestras categorías están organizadas para que encuentres exactamente
+            lo que
+            buscas de manera rápida y segura. Además, estamos constantemente actualizando nuestro catálogo con las
+            últimas
+            tendencias y novedades, asegurando que siempre tengas acceso a productos modernos, originales y de alta
+            calidad. <br>
+            Explorar nuestra tienda es sencillo: nuestras categorías están organizadas para que encuentres exactamente
+            lo que buscas de manera rápida y segura. Además, estamos constantemente actualizando nuestro catálogo con
+            las últimas tendencias y novedades, asegurando que siempre tengas acceso a productos modernos, originales y
+            de alta calidad.
+
+            No importa si buscas renovar tu hogar, mejorar tu estilo, encontrar el regalo perfecto o simplemente darte
+            un gusto: en nuestra tienda cada producto es una oportunidad para disfrutar de experiencias únicas. Con
+            descripciones claras, especificaciones detalladas y atención personalizada, te ayudamos a tomar decisiones
+            informadas y seguras, haciendo que cada compra sea tan gratificante como útil.
+
+            Atrévete a explorar, descubrir y llevar a casa productos que combinan innovación, estilo y funcionalidad.
+            Porque en nuestra tienda no solo vendemos productos: ofrecemos soluciones, experiencias y momentos de
+            satisfacción que transforman lo cotidiano en algo extraordinario.</p>
+        <img src="productos.webp" alt="">
+    </div>
+
     @if (cargando) {
     <p>Cargando...</p>
     }
     @for (Product of Products; track Product.id) {
-    <app-product-card [id] = "Product.id" [title]="Product.title" [price]="Product.price" [description]="Product.description"
-        [image]="Product.image" [category]="Product.category" />
+    <app-product-card [id]="Product.id" [title]="Product.title" [price]="Product.price"
+        [description]="Product.description" [image]="Product.image" [category]="Product.category" />
     } @empty {
     <p>No hay productos</p>
     }

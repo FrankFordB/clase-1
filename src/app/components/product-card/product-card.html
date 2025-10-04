@@ -1,7 +1,8 @@
-<div [routerLink]="['/producto-detalle/', id]">
-    <img [src]=image [alt]=title>
-    <h3>Nombre del Producto: {{title}}</h3>
-    <p>precio: {{price}}</p>
-    <p>Categoria: {{category}}</p>
-    
+<div class="product-grid">
+  <div class="product-card" [routerLink]="['/producto-detalle/', id]">
+    <img [src]="image" [alt]="title">
+    <h3>{{title}}</h3>
+    <p class="price">${{price}}</p>
+    <p class="category">{{category}}</p>
+  </div>
 </div>
